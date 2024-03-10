@@ -1,7 +1,8 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install -y python python-pip
+RUN apt-get install -y python3
+RUN apt-get install python-pip
 RUN pip install flask
 
 COPY app.py /opt/app.py
